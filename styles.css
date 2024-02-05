@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    text-align:center;
+    padding: 10px;
+    background-color: #6dacee;
+}
+
+.gallery{
+    display: flex;
+    gap: 1em;
+    padding-top: 10px;
+    overflow-x: auto ;
+    padding: 4em 2em;
+}
+
+.gallery::-webkit-scrollbar{
+    width: 6;
+}
+
+.item{
+    display: flex;
+    min-width: 120px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery>div{
+    flex: 1;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.gallery{
+    display: flex;
+}
+img{
+    width: 100%;
+    transition:all.5s;
+}
+img:hover{
+    transform: scale(1.5) rotate(12deg);
+}
+
+.overlay {
+    position: absolute;
+    left: -120%;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(74, 72, 72, 0.5); /* Overlay background color */
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    transition: left 0.3s ease;
+    text-align: justify;
+   
+}
+
+.item:hover .overlay {
+    left: 0;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+.list{
+    background-image: url(./foodmenu/Background\ Image.jpg);
+
+}
+
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    background-color: #ddd;
+    font-style:inherit;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(128, 124, 120);
+}   
